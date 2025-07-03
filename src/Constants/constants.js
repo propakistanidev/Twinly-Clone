@@ -1,0 +1,1 @@
+export const margins = 'mt-[36.82px] ml-[112.59px]'
