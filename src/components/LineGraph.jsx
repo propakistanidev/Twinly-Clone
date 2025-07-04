@@ -11,23 +11,24 @@ import {
 } from 'recharts';
 
 const data = [
-    { name: 'Jan', Others: 6000, Twinly: 2400 },
-    { name: 'Feb', Others: 3000, Twinly: 1398 },
-    { name: 'Mar', Others: 2000, Twinly: 9800 },
+    { name: 'Jan', Others: 2000, Twinly: 4000 },
+    { name: 'Feb', Others: 1500, Twinly: 2300 },
+    { name: 'Mar', Others: 1100, Twinly: 6000 },
     { name: 'Apr', Others: 2780, Twinly: 3908 },
     { name: 'May', Others: 1890, Twinly: 4800 },
     { name: 'Jun', Others: 2390, Twinly: 3800 },
-    { name: 'Jul', Others: 3490, Twinly: 4300 },
+    { name: 'Jul', Others: 1800, Twinly: 4300 },
 ];
 
 export default function LineGraph() {
     return (
-        <div className="w-[500px] h-[300px] bg-white p-4 rounded-xl shadow-xl">
-            <h2 className="text-lg font-semibold mb-2 text-gray-800">Website Stats</h2>
-            <ResponsiveContainer width="100%" height={240}>
+        <div className="w-[500px] h-[300px] bg-[#E8E8E8] p-6 rounded-xl shadow-xl">
+            <h2 className="text-[24px] font-medium tracking-wide">Statistics</h2>
+            <p className='text-[16px] font-extralight leading-7 tracking-wide'>Keep track of your business statistics.</p>
+            <ResponsiveContainer width="100%" height={230}>
                 <LineChart
                     data={data}
-                    margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
+                    margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
                 >
                     <CartesianGrid strokeDasharray="3 3" vertical={false} horizontal={false} />
                     <XAxis dataKey="name" axisLine={false} tickLine={false} />
@@ -55,10 +56,10 @@ export default function LineGraph() {
                             </ul>
                         )}
                     />
-                    <Line type="monotone" dataKey="Twinly" stroke="#0F5265" strokeWidth={3}
+                    <Line type="monotone" dataKey="Twinly" stroke="#0F5265" strokeWidth={3.8}
                     />
 
-                    <Line type="monotone" dataKey="Others" stroke="#F5D794" strokeWidth={3} />
+                    <Line type="monotone" dataKey="Others" stroke="#EACD87" strokeWidth={2.9} />
                 </LineChart>
             </ResponsiveContainer>
         </div>

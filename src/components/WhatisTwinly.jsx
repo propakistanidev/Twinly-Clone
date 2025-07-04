@@ -2,12 +2,7 @@ import Hours from '../assets/Card124Hours.png'
 import CardImage from '../assets/CardImage.png'
 import { Icon } from '@iconify/react'
 import LineChart from '../components/LineGraph.jsx'
-
-
-
-
-export const CardHeading = 'text-[24px] font-medium tracking-wide'
-export const CardPara = 'text-[16px] font-extralight leading-7 tracking-wide'
+import { CardHeading, CardPara } from '../Constants/constants.js'
 
 export default function WhatIsTwinly() {
     return (
@@ -52,7 +47,16 @@ export default function WhatIsTwinly() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[325px] h-[295px] bg-[#E8E8E8] rounded-xl shadow-2xl">Card 5</div>
+                    <div className="w-[325px] h-[295px] bg-[#E8E8E8] rounded-xl shadow-2xl p-6">
+                        <div>
+                            <h2 className={`${CardHeading} capitalize`}>ai in your control</h2>
+                            <p className={`${CardPara} mt-4`}>Disable Ai anytime to personally <br /> engage, providing a seamless blend <br />of automation and customization</p>
+                        </div>
+                        <div className='gap-2 flex justify-center items-center mt-8'>
+                            <button className='bg-[#0F5265] text-white font-light rounded-lg px-4 py-2 text-xs whitespace-nowrap'>Disable AI</button>
+                            <button className='flex gap-2 items-center bg-[#0F5265] text-white font-light rounded-lg px-4 py-2 text-xs whitespace-nowrap'><span><Icon icon='ri:eye-line' /></span>Preview AI Chatbot</button>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Column 3: Card 3 (Tall) */}

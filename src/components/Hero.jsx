@@ -7,15 +7,15 @@ export default function Hero() {
         <div className="flex flex-row ">
             <div className={`flex flex-col gap-4 tracking-wide ${margins} flex-[1] `}>
                 <h1 className="capitalize text-[32px] ml-8 text-white mt-10">Your AI-Powered Legal Assistant</h1>
-                <h2 className="capitalize text-[24px] ml-8 text-white font-extralight">Unlock Seamless Client Engagement</h2>
-                <p className="text-[18px] text-white leading-7.5 font-extralight ml-8">Welcome to Twinly.ai, where innovation meets legal <br /> excellence. Supercharge your online presence and client<br /> interactions with our cutting-edge AI bot designed exclusively<br /> for legal professionals.</p>
+                <h2 className="capitalize text-[24px] ml-8 text-white font-extralight mt-4">Unlock Seamless Client Engagement</h2>
+                <p className="text-[18px] text-white leading-7.5 font-extralight ml-8 mt-4">Welcome to Twinly.ai, where innovation meets legal <br /> excellence. Supercharge your online presence and client<br /> interactions with our cutting-edge AI bot designed exclusively<br /> for legal professionals.</p>
                 {/* Flex Col Div */}
                 <div className='flex flex-col gap-4 ml-8'>
                     {/* Image Div */}
-                    <div className='flex flex-row gap-4'>
+                    <div className='flex flex-row gap-4 mt-4'>
                         <img src={handIcon} alt="Hand Icon" className='w-[65px] h-[107px] -mt-1' />
-                        <div className='flex flex-col'><h2 className='text-[24px] text-white capitalize mb-1'>Sales Cycle Trained</h2>
-                            <p className='text-[16px] text-white font-extralight leading-7.5'>Never miss a potential client, and convert leads into loyal clientele with a<br /> seamlessly guided sales journey.</p></div>
+                        <div className='flex flex-col'><h2 className='text-[24px] text-white capitalize mb-1 '>Sales Cycle Trained</h2>
+                            <p className='text-[16px] text-white font-extralight leading-7.5 mt-2'>Never miss a potential client, and convert leads into loyal clientele with a<br /> seamlessly guided sales journey.</p></div>
                     </div>
 
                     <div>
