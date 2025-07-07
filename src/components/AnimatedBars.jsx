@@ -44,10 +44,10 @@ export default function FancyBarChart() {
                                 initial={{ height: 0, backgroundColor: '#F5D794' }}
                                 animate={{
                                     height: `${value * 2}px`,
-                                    backgroundColor: i === highlightedIndex ? '#0F5265' : '#F5D794',
+                                    backgroundColor: i === highlightedIndex ? '#E1FDFD' : '#F5D794',
                                 }}
-                                transition={{ duration: 0.8 }}
-                                className="w-8 rounded-t"
+                                transition={{ duration: 0.8, delay: i * 0.2 }}
+                                className="w-8 rounded-t gap-4"
                             />
                         ))}
                     </div>
